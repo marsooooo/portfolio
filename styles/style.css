@@ -282,11 +282,15 @@ h5 {
 }
 
 
-.scrollable::-webkit-scrollbar {
+#section1::-webkit-scrollbar,
+#section2::-webkit-scrollbar,
+#section3::-webkit-scrollbar {
     width: 8px;
 }
 
-.scrollable::-webkit-scrollbar-thumb {
+#section1::-webkit-scrollbar-thumb,
+#section2::-webkit-scrollbar-thumb,
+#section3::-webkit-scrollbar-thumb {
     background-color: #ffffff;
     border-radius: 8px;
 }
