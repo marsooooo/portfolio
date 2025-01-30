@@ -305,7 +305,7 @@ h5 {
 
 .directLinks {
     display: flex;
-    align-items: flex-end;
-    margin: 15px;
+    justify-content: flex-end;
+    margin: 15px 0px;
     gap: 15px;
 }
