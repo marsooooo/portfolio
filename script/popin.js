@@ -33,55 +33,33 @@ $(document).ready(function() {
 
     $('body').append(overlay);
 
-    const projectDetails = {
-        stinger: {
-            title: 'Stinger Transition',
-            description: 'A transition project created with After Effects. Focused on smooth animations and effects.',
-            duration: '4 hours',
-            image: 'content/projects/stinger/main.png',
-        },
-        piwigo: {
-            title: 'Piwigo Internship',
-            description: '6-month remote full-stack development internship focused on enhancing the Piwigo platform.',
-            duration: '6 months',
-            image: 'content/projects/piwigo/main.png',
-        },
-        riot_api: {
-            title: 'Riot Games API app',
-            description: 'An ongoing project using React and Tailwind to integrate Riot Games API features.',
-            duration: 'Ongoing',
-            image: 'content/projects/riot_api/main.png',
-        },
-    };
-
     $('.project_block').on('click', function() {
         const projectId = $(this).attr('id');
-        const details = projectDetails[projectId];
-
-        if (details) {
-            popin.html(`
-                <div style="display: flex; align-items: flex-start; height: 100%;">
-                    <img src="${details.image}" alt="${details.title}" style="width: 40%; height: auto; margin-right: 20px; border-radius: 8px;">
-                    <div style="flex: 1; overflow-y: auto;">
-                        <h2>${details.title}</h2>
-                        <p>${details.description}</p>
-                        <p><strong>Duration:</strong> ${details.duration}</p>
-                    </div>
-                </div>
-                <button id="close_popin" style="position: absolute; top: 10px; right: 10px; background: none; border: none; color: #d6d6d6; font-size: 24px; cursor: pointer;">&times;</button>
-            `).fadeIn();
-
-            overlay.fadeIn();
-
-            $('#close_popin').on('click', function() {
-                popin.fadeOut();
-                overlay.fadeOut();
-            });
-        }
+        const projectFile = `projects/${projectId}.html`;
+    
+        $.ajax({
+            url: projectFile,
+            dataType: 'html',
+            success: function(data) {
+                popin.html(data).fadeIn();
+                overlay.fadeIn();
+                
+                popin.append('<button id="close_popin" style="position: absolute; top: 10px; right: 10px; background: none; border: none; color: #d6d6d6; font-size: 24px; cursor: pointer;">&times;</button>');
+    
+                $('#close_popin').on('click', function() {
+                    popin.fadeOut();
+                    overlay.fadeOut();
+                });
+            },
+            error: function() {
+                popin.html('<p style="color: red;">Erreur de chargement du projet.</p>').fadeIn();
+                overlay.fadeIn();
+            }
+        });
     });
-
+    
     overlay.on('click', function() {
         popin.fadeOut();
         overlay.fadeOut();
     });
-});
+});    
