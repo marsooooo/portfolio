@@ -46,7 +46,7 @@
             </div>
             <div id="section1" class="section about">
                 <h1>About Me</h1>
-                <div>
+                <div class="scrollable">
                 <p class="main_p">My name is Marceau, I'm a student web developer at MyDigitalSchool and currently looking for an apprenticeship for 2025.</p>
                 <p class="thin_p">I thrive on building functional systems that not only look great but also provide real value to users. With every project, I aim to blend aesthetics and usability seamlessly.</p>
                 <p class="classic_p">I always had a strong interest in IT and design, after almost 3 years in college as a computer science student I discovered web development and immediately fell for it and its endless possibilities.</p>
@@ -54,7 +54,7 @@
                 </div>
                 </div>
             <div id="section2" class="section project">
-                <div>
+                <div class="scrollable">
                 <h1>My projects</h1>
                 <div class="projects_container">
                 <div class="project_block" id="stinger">
@@ -92,7 +92,7 @@
             </div>
             <div id="section3" class="section contact">
                 <h1>Let's get in touch</h1>
-                <div>
+                <div class="scrollable">
                 <form action="#" method="POST" class="contact-form">
                     <input type="text" name="first-name" placeholder="First Name" required>
                     <input type="text" name="last-name" placeholder="Last Name" required>
