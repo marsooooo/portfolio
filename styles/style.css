@@ -296,6 +296,9 @@ h5 {
 }
 
 .logoLink {
-    width: 30px;
     color: #FFFFFF;
+}
+
+.logoLink img{
+    width: 30px;
 }
