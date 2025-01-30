@@ -100,8 +100,10 @@
                     <textarea name="message" placeholder="Message" rows="5" required></textarea>
                     <button type="submit" class="submit-btn">Send</button>
                 </div>
-                <a href="https://github.com/marsooooo" class="logoLink"><img src="assets/git_white.png" alt="My Github"></a>
-                <a href="https://www.linkedin.com/in/marceau-tison-0bbb612a8/" class="logoLink"><img src="assets/linkedin_white.png" alt="My Linkedin"></a>
+                <div class="directLinks">
+                    <a href="https://github.com/marsooooo" class="logoLink"><img src="assets/git_white.png" alt="My Github"></a>
+                    <a href="https://www.linkedin.com/in/marceau-tison-0bbb612a8/" class="logoLink"><img src="assets/linkedin_white.webp" alt="My Linkedin"></a>
+                </div>
             </div>
         </div>
         

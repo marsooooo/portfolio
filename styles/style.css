@@ -302,3 +302,10 @@ h5 {
 .logoLink img{
     width: 30px;
 }
+
+.directLinks {
+    display: flex;
+    align-items: flex-end;
+    margin: 15px;
+    gap: 15px;
+}
