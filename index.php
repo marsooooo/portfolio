@@ -44,56 +44,62 @@
               <p class="home_p">Discover all my latest projects as well as some informations about me and my hobbies</p>
 
             </div>
-            <div id="section1" class="section about">
-              <h1>About Me</h1>
-              <p class="main_p">My name is Marceau, I'm a student web developer at MyDigitalSchool and currently looking for an apprenticeship for 2025.</p>
-              <p class="thin_p">I thrive on building functional systems that not only look great but also provide real value to users. With every project, I aim to blend aesthetics and usability seamlessly.</p>
-              <p class="classic_p">I always had a strong interest in IT and design, after almost 3 years in college as a computer science student I discovered web development and immediately fell for it and its endless possibilities.</p>
-              <p class="thin_p">Since then I’ve been studying different tools to become a great asset for my teams and work efficiently on my own.</p>
-              </div>
-            <div id="section2" class="section project">
-              <h1>My projects</h1>
-              <div class="projects_container">
-              <div class="project_block" id="stinger">
-                <img src="content/projects/stinger/main.png" alt="main">
-                <div class="project_info">
-                  <h2>Stinger Transition</h2>
-                  <p>After Effects</p>
-                  <p class="project_subinfo">
-                    4 hours
-                  </p>
+            <div class="section about">
+                <h1>About Me</h1>
+                <div id="section1">
+                <p class="main_p">My name is Marceau, I'm a student web developer at MyDigitalSchool and currently looking for an apprenticeship for 2025.</p>
+                <p class="thin_p">I thrive on building functional systems that not only look great but also provide real value to users. With every project, I aim to blend aesthetics and usability seamlessly.</p>
+                <p class="classic_p">I always had a strong interest in IT and design, after almost 3 years in college as a computer science student I discovered web development and immediately fell for it and its endless possibilities.</p>
+                <p class="thin_p">Since then I’ve been studying different tools to become a great asset for my teams and work efficiently on my own.</p>
                 </div>
-              </div>
-              <div class="project_block" id="piwigo">
-                <img src="content/projects/piwigo/main.png" alt="main">
-                <div class="project_info">
-                  <h2>Piwigo Internship</h2>
-                  <p>Remote Fullstack</p>
-                  <p class="project_subinfo">
-                    6 months
-                  </p>
                 </div>
-              </div>
-              <div class="project_block" id="riot_api">
-                <img src="content/projects/riot_api/main.png" alt="main">
-                <div class="project_info">
-                  <h2>Riot Games API app</h2>
-                  <p>React & Tailwind</p>
-                  <p class="project_subinfo">
-                    Ongoing
-                  </p>
+            <div class="section project">
+                <div id="section2">
+                <h1>My projects</h1>
+                <div class="projects_container">
+                <div class="project_block" id="stinger">
+                    <img src="content/projects/stinger/main.png" alt="main">
+                    <div class="project_info">
+                    <h2>Stinger Transition</h2>
+                    <p>After Effects</p>
+                    <p class="project_subinfo">
+                        4 hours
+                    </p>
+                    </div>
                 </div>
-              </div>
-              </div>
+                <div class="project_block" id="piwigo">
+                    <img src="content/projects/piwigo/main.png" alt="main">
+                    <div class="project_info">
+                    <h2>Piwigo Internship</h2>
+                    <p>Remote Fullstack</p>
+                    <p class="project_subinfo">
+                        6 months
+                    </p>
+                    </div>
+                </div>
+                <div class="project_block" id="riot_api">
+                    <img src="content/projects/riot_api/main.png" alt="main">
+                    <div class="project_info">
+                    <h2>Riot Games API app</h2>
+                    <p>React & Tailwind</p>
+                    <p class="project_subinfo">
+                        Ongoing
+                    </p>
+                    </div>
+                </div>
+                </div>
+                </div>
             </div>
-            <div id="section3" class="section contact">
-              <h1>Let's get in touch</h1>
-              <form action="#" method="POST" class="contact-form">
-                  <input type="text" name="first-name" placeholder="First Name" required>
-                  <input type="text" name="last-name" placeholder="Last Name" required>
-                  <input type="email" name="email" placeholder="Mail" required>
-                  <textarea name="message" placeholder="Message" rows="5" required></textarea>
-                  <button type="submit" class="submit-btn">Send</button>
+            <div class="section contact">
+                <h1>Let's get in touch</h1>
+                <div id="section3">
+                <form action="#" method="POST" class="contact-form">
+                    <input type="text" name="first-name" placeholder="First Name" required>
+                    <input type="text" name="last-name" placeholder="Last Name" required>
+                    <input type="email" name="email" placeholder="Mail" required>
+                    <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send</button>
+                </div>
             </div>
         </div>
         
