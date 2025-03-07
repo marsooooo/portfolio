@@ -11,9 +11,9 @@ $(document).ready(function() {
         borderRadius: '10px',
         zIndex: '1000',
         display: 'none',
-        width: '50%',
+        width: '75%',
         maxWidth: '90%',
-        height: '50%',
+        height: '75%',
         maxHeight: '90%',
         overflowY: 'auto',
     });
