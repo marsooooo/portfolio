@@ -13,10 +13,10 @@
         <source src="content/wb_background.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
     </video>
-    <div class="language-switcher">
+    <!-- <div class="language-switcher">
       <img id="lang-en" src="content/flagEN.png" alt="English" title="English" class="flag" />
       <img id="lang-fr" src="content/flagFR.png" alt="Français" title="Français" class="flag" />
-    </div>
+    </div> -->
     <div class="border-container">
         <div class="main-info">
             <h1>Tison Marceau</h1>
