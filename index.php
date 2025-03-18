@@ -41,7 +41,7 @@
           <div id="sections-container">
             <div id="home" class="section homeblock">
               <h1>Welcome to my portfolio !</h1>
-              <p class="home_p">Discover all my latest projects as well as some informations about me and my hobbies</p>
+              <p class="home_p">Discover all my latest projects as well as some informations about me and my hobbies </p><p style="font-style: italic; font-size: 1.5em;"> ⚠️ My portfolio is still under development, some features like the mobile mode and the language switch are unavailable and the projects section doesn't contain all my work yet.</p>
 
             </div>
             <div id="section1" class="section about">
