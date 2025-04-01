@@ -282,11 +282,11 @@ h5 {
 }
 
 
-.section_container::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px;
 }
 
-.section_container::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: #ffffff;
     border-radius: 8px;
 }
@@ -321,3 +321,32 @@ h5 {
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 }
+
+.project_pop {
+    display: flex;
+    align-items: flex-start;
+    height: 100%; /* Utilise toute la hauteur de la popin */
+}
+
+.project_pop_img_block {
+    flex: 1;
+    overflow-y: auto; /* Permet de faire défiler uniquement les images */
+    overflow-x: hidden;
+    max-height: 100%; /* Limite la hauteur des images pour ne pas sortir de la popin */
+    padding: 10px;
+}
+
+.project_pop_desc_block {
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden; /* Empêche le défilement du texte */
+}
+
+.project_pop_img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+

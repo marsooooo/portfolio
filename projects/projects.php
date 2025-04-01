@@ -1,15 +1,6 @@
 <?php /* Projects */?>
 
-<div class="project_block" id="stinger">
-    <img src="content/projects/stinger/main.png" alt="main">
-    <div class="project_info">
-    <h2>Stinger Transition</h2>
-    <p>After Effects</p>
-    <p class="project_subinfo">
-        4 hours
-    </p>
-    </div>
-</div>
+
 
 <div class="project_block" id="piwigo">
     <img src="content/projects/piwigo/main.png" alt="main">
@@ -30,5 +21,13 @@
     <p class="project_subinfo">
         Ongoing
     </p>
+    </div>
+</div>
+
+<div class="project_block" id="motion">
+    <img src="content/projects/motion/main.png" alt="main">
+    <div class="project_info">
+    <h2>Motion Design</h2>
+    <p>After Effects</p>
     </div>
 </div>

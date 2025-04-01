@@ -15,7 +15,7 @@ $(document).ready(function() {
         maxWidth: '90%',
         height: '75%',
         maxHeight: '90%',
-        overflowY: 'auto',
+        overflowY: 'hidden',
     });
 
     $('body').append(popin);
@@ -63,3 +63,5 @@ $(document).ready(function() {
         overlay.fadeOut();
     });
 });    
+
+
