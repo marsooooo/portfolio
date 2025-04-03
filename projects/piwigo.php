@@ -1,10 +1,35 @@
+<?php
+$imageDir = 'piwigo/';
+if (is_dir($imageDir)) {
+    $images = scandir($imageDir);
+    
+    $imageFiles = array_filter($images, function($file) {
+        return in_array(pathinfo($file, PATHINFO_EXTENSION), ['jpg', 'png', 'PNG', 'jpeg']);
+    });
+
+    usort($imageFiles, callback: function($a, $b) {
+        if ($a === 'main.png') {
+            return -1;
+        }
+        if ($b === 'main.png') {
+            return 1;
+        }
+        return strcmp($a, $b);
+    });
+} else {
+    echo "Le dossier $imageDir n'existe pas ou n'est pas accessible.";
+    $imageFiles = [];
+}
+?>
+
 <div class="project_pop">
     <div class="project_pop_img_block">
-        <img src="content/projects/piwigo/main.png" alt="Piwigo Main logo big" class="project_pop_img">
-        <img src="content/projects/piwigo/1.png" alt="Project Img" class="project_pop_img">
-        <img src="content/projects/piwigo/2.png" alt="Project Img" class="project_pop_img">
-        <img src="content/projects/piwigo/3.png" alt="Project Img" class="project_pop_img">
-        <img src="content/projects/piwigo/4.png" alt="Project Img" class="project_pop_img">
+        <?php
+        foreach ($imageFiles as $imageFile) {
+            $imagePath = 'projects/piwigo/' . $imageFile;
+            echo '<img src="' . $imagePath . '" alt="Project Image" class="project_pop_img">';
+        }
+        ?>
     </div>
     <div class="project_pop_desc_block">
         <h2>Piwigo Internship</h2>
@@ -13,10 +38,5 @@
         <p><strong>Duration :</strong> 6 months</p>
         <p>During my internship, I was in charge of multiple tasks including the restructuration of complex existing features, which challenged my knowledge in every aspect of web development.</p>
         <a href="https://github.com/piwigo" class="logoLink"><img src="assets/git_white.png" alt="Piwigo Github"></a>
-    </div>
-</div>
-<div id="zoomedPopin" style="display:none;">
-    <div id="zoomedImageContainer">
-        <img id="zoomedImage" src="" alt="Zoomed image">
     </div>
 </div>

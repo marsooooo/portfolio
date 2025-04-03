@@ -35,8 +35,8 @@ $(document).ready(function() {
 
     $('.project_block').on('click', function() {
         const projectId = $(this).attr('id');
-        const projectFile = `projects/${projectId}.html`;
-    
+        const projectFile = `projects/${projectId}.php`;
+        
         $.ajax({
             url: projectFile,
             dataType: 'html',
@@ -62,6 +62,4 @@ $(document).ready(function() {
         popin.fadeOut();
         overlay.fadeOut();
     });
-});    
-
-
+});
