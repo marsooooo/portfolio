@@ -29,7 +29,7 @@
 <div class="project_block" id="projetspe">
     <img src="projects/projetspe/main.png" alt="main">
     <div class="project_info">
-        <h2 data-i18n="projetspe_title">Projet de Spécialité</h2>
+        <h2 data-i18n="projetspe_title">Specialization Project</h2>
         <p data-i18n="projetspe_description">PHP & JS</p>
     </div>
 </div>
