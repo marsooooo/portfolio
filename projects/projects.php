@@ -6,7 +6,7 @@
     <img src="projects/piwigo/main.png" alt="main">
     <div class="project_info">
         <h2 data-i18n="pwg_title">Piwigo Internship</h2>
-        <p data-i18n="pwg_description">Remote Fullstack</p>
+        <p data-i18n="pwg_description">PHP</p>
     </div>
 </div>
 
