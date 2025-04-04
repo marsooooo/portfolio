@@ -19,7 +19,7 @@
 </div>
 
 <div class="project_block" id="gamejam">
-    <img src="projects/gamejam/main.png" alt="main">
+    <img src="projects/gamejam/main.PNG" alt="main">
     <div class="project_info">
         <h2 data-i18n="gamejam_title">Cat coins du monde</h2>
         <p data-i18n="gamejam_description">Godot 3</p>
