@@ -46,8 +46,9 @@ h5 {
     transition: opacity 0.2s ease-in-out;
 }
 
-.language-switcher .flag:hover {
-    opacity: 0.8;
+.inactive {
+    opacity: 0.3;
+    pointer-events: none;
 }
 
 .background-video {
@@ -131,7 +132,6 @@ h5 {
 
 .section {
         color: #FFFFFF;
-        height: 60% !important;
         width: 40% !important;
         padding: 20px;
         box-sizing: border-box;
@@ -146,6 +146,7 @@ h5 {
     min-height: 300px;
     max-height: 450px;
     overflow-y: auto;
+    max-height: calc(100vh - 300px);
 }
 
 .project_block{
@@ -215,7 +216,7 @@ h5 {
 }
 
 .home_p{
-    text-align: right;
+    text-align: center;
 }
 
 .contact{
@@ -226,7 +227,7 @@ h5 {
 .section h1 {
     font-weight: bolder;
     font-size: 4em;
-    text-align: right;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -243,7 +244,7 @@ h5 {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: self-end;
+    align-items: center;
 }
 
 .contact-form input, .contact-form textarea {
@@ -266,6 +267,7 @@ h5 {
     background-color: #D6D6D6;
     color: #141414;
     border: none;
+    height: 40px;
     padding: 12px;
     cursor: pointer;
     font-size: 1em;
@@ -301,7 +303,7 @@ h5 {
 
 .directLinks {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 15px 0px;
     gap: 15px;
 }
@@ -309,7 +311,9 @@ h5 {
 .sendConfirm {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0px;
 }
 
 .form-message {
@@ -317,6 +321,7 @@ h5 {
     vertical-align: middle;
     opacity: 0;
     padding: 8px;
+    margin: 5px 0px;
     border-radius: 100px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -325,14 +330,14 @@ h5 {
 .project_pop {
     display: flex;
     align-items: flex-start;
-    height: 100%; /* Utilise toute la hauteur de la popin */
+    height: 100%;
 }
 
 .project_pop_img_block {
     flex: 1;
-    overflow-y: auto; /* Permet de faire défiler uniquement les images */
+    overflow-y: auto;
     overflow-x: hidden;
-    max-height: 100%; /* Limite la hauteur des images pour ne pas sortir de la popin */
+    max-height: 100%;
     padding: 10px;
 }
 
@@ -340,7 +345,15 @@ h5 {
     flex: 1;
     height: 100%;
     padding: 10px;
-    overflow: hidden; /* Empêche le défilement du texte */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.project_pop_desc_block h2{
+    font-size: 3em;
+    font-weight: 900;
+}
+.project_pop_desc_block p{
+    font-size: 1.3em;
 }
 
 .project_pop_img {
@@ -349,4 +362,85 @@ h5 {
     margin-right: 20px;
     border-radius: 8px;
 }
+@media screen and (max-width: 768px) {
+    .border-container{
+        border: none;
+        box-shadow: none;
+    }
+    .main-info{
+        top: 40px;
+        left: auto;
+        text-align: center;
+    }
+    .navigation {
+        left: auto;
+        bottom: 0;
+    }
+    .navigation ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        padding: 0;
+        gap: 40px;
+        padding-inline-start: 0 !important;
 
+    };
+    .navigation ul li {
+        list-style-type: none;
+    }
+    .navigation a{
+        font-size: 1.5em;
+        font-style: normal;
+    }
+    .home {
+        bottom: auto;
+        top: 40px;
+        opacity: 75%;
+        left: 40px;
+    }
+    .home a svg{
+        width: 40px;
+        height: 40px;
+    }
+    .section{
+        width: 80% !important;
+    }
+    .project_pop {
+        flex-direction: column-reverse;
+    }
+    .section h1 {
+        font-size: 2.8em;
+    }
+    .home_p {
+        font-size: 1.5em !important;
+    }
+    .contact-form{
+        gap: 0px;
+    }
+    .directLinks {
+        margin: 0;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .logoLink img{
+        width: 40px;
+    }
+    .about p{
+        font-size: 1.1em;
+    }
+    #section3 h1{
+        font-size: 2em;
+    }
+    .form-message {
+        margin: 5px 0px;
+    }
+    .contact-form textarea,
+    .contact-form input{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .navigation a{
+        font-size: 1em;
+    }
+}
