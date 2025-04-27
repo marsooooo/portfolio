@@ -145,7 +145,8 @@ h5 {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 5%
+    left: 5%;
+    padding: 10px 20px calc(10px + env(safe-area-inset-bottom)) 20px;  /* Prendre en compte le safe area en bas */
 }
 
 .navigation a, li{
@@ -419,7 +420,6 @@ h5 {
     .navigation {
         left: auto;
         bottom: 0;
-        padding: 10px 20px calc(10px + env(safe-area-inset-bottom)) 20px;
     }
     .navigation ul {
         display: flex;
@@ -428,8 +428,7 @@ h5 {
         padding: 0;
         gap: 40px;
         padding-inline-start: 0 !important;
-
-    };
+    }
     .navigation ul li {
         list-style-type: none;
     }
