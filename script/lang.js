@@ -80,7 +80,7 @@ const translations = {
     en: {
         title: "Tison Marceau Portfolio",
         welcome: "Welcome to my portfolio !",
-        discover: "Discover all my latest projects as well as some information about me and my hobbies",
+        discover: "Discover all my latest projects as well as some informations about me and my hobbies. Site is still under development and may lead to some issues on certain devices.",
         about_me_header: "About Me",
         about_text: "My name is Marceau, I'm a student web developer at MyDigitalSchool and currently looking for an apprenticeship for 2025.",
         about_text2: "I thrive on building functional systems that not only look great but also provide real value to users. With every project, I aim to blend aesthetics and usability seamlessly.",
@@ -140,7 +140,7 @@ const translations = {
     fr: {
         title: "Portfolio de Tison Marceau",
         welcome: "Bienvenue sur mon portfolio !",
-        discover: "Découvrez tous mes derniers projets ainsi que des informations sur moi et mes hobbies.",
+        discover: "Découvrez tous mes derniers projets ainsi que des informations sur moi et mes hobbies. Ce site est encore en développement et n'est peut être pas adapté à tous les appareils.",
         about_me_header: "À propos de moi",
         about_text: "Je m'appelle Marceau, je suis étudiant en développement web à MyDigitalSchool et je suis actuellement à la recherche d'un apprentissage pour 2025.",
         about_text2: "J'aime créer des systèmes fonctionnels qui non seulement sont beaux, mais aussi apportent une véritable valeur aux utilisateurs. À chaque projet, je cherche à allier esthétique et utilité.",

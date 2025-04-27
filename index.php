@@ -55,7 +55,7 @@
           <div id="sections-container">
             <div id="home" class="section homeblock">
               <h1 data-i18n="welcome">Welcome to my portfolio !</h1>
-              <p class="home_p" data-i18n="discover">Discover all my latest projects as well as some informations about me and my hobbies </p>
+              <p class="home_p" data-i18n="discover">Discover all my latest projects as well as some informations about me and my hobbies. Site is still under development and may lead to some issues on certain devices.</p>
 
             </div>
             <div id="section1" class="section about">
