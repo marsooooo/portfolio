@@ -496,6 +496,9 @@ h5 {
     .project_pop_desc_block p {
         font-size: 0.8em;
     }
+    .custom-language-switcher{
+        display: none;
+    }
 }
 @media screen and (max-width: 480px) {
     .navigation a{
