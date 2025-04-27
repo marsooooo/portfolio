@@ -28,29 +28,73 @@ h5 {
     font-weight: 900;
 }
 
-.language-switcher {
+.custom-language-switcher {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 40px;
-    z-index: 3;
+    width: 90px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    z-index: 1000;
+}
+  
+#selected-language {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    gap: 6px;
+    border: 1px solid #111111;
+    padding: 2px 2px;
+    border-radius: 5px;
+    background-color: #111111;
 }
 
-.language-switcher .flag {
-    width: 30px;
-    height: auto;
-    margin-left: 20px;
-    cursor: pointer;
-    transition: opacity 0.2s ease-in-out;
+#selected-language img {
+    width: 20px;
+    height: 20px;
 }
 
-.inactive {
-    opacity: 0.3;
-    pointer-events: none;
+#selected-language span{
+    color: #FFFFFF;
 }
 
+#language-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border: 1px solid #111111;
+    border-top: none;
+    background-color: #111111;
+    z-index: 10;
+    border-radius: 0 0 5px 5px;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    transition: background 0.3s;
+}
+
+.language-option span{
+    color: #FFFFFF;
+}
+
+.language-option:hover {
+    background-color: #303030;
+}
+
+.language-option img {
+    width: 20px;
+    height: 20px;
+}
+
+.hidden {
+    display: none;
+}
+  
 .background-video {
     position: absolute;
     top: 0;
@@ -375,6 +419,7 @@ h5 {
     .navigation {
         left: auto;
         bottom: 0;
+        padding: 10px 20px calc(10px + env(safe-area-inset-bottom)) 20px;
     }
     .navigation ul {
         display: flex;
@@ -389,7 +434,7 @@ h5 {
         list-style-type: none;
     }
     .navigation a{
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-style: normal;
     }
     .home {
@@ -399,17 +444,18 @@ h5 {
         left: 40px;
     }
     .home a svg{
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     .section{
         width: 80% !important;
+        top: 55% !important;
     }
     .project_pop {
         flex-direction: column-reverse;
     }
     .section h1 {
-        font-size: 2.8em;
+        font-size: 2.2em;
     }
     .home_p {
         font-size: 1.5em !important;
@@ -426,7 +472,7 @@ h5 {
         width: 40px;
     }
     .about p{
-        font-size: 1.1em;
+        font-size: 0.8em;
     }
     #section3 h1{
         font-size: 2em;
@@ -438,9 +484,21 @@ h5 {
     .contact-form input{
         width: 100%;
     }
+    .project h2{
+        font-size: 1em;
+    }
+    .project_block {
+        height: 90px;
+    }
+    .project_pop_desc_block h2 {
+        font-size: 1.5em;
+    }
+    .project_pop_desc_block p {
+        font-size: 0.8em;
+    }
 }
 @media screen and (max-width: 480px) {
     .navigation a{
-        font-size: 1em;
+        font-size: 0.7em;
     }
 }

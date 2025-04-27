@@ -37,7 +37,7 @@ if (is_dir($imageDir)) {
         <p data-i18n="ccdm_project_desc_2">This game made with my classmates won the awards for the jury's favorite and student's favorite</p>
         <p data-i18n="ccdm_project_desc_3">I was in charge of a part of the game design...</p>
         <p><strong data-i18n="ccdm_project_duration_label">Duration:</strong> 1 week</p>
-        <iframe src="https://itch.io/embed/3308227" width="552" height="167" frameborder="0"><a href="https://inesaoufi.itch.io/cat-coins-du-monde">Cat Coins Du Monde</a></iframe>   
+        <a href="https://inesaoufi.itch.io/cat-coins-du-monde" class="logoLink" data-i18n="gamejam_access_link">Cat coins du monde on Itch.io</a>   
     </div>
 </div>
 

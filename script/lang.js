@@ -1,39 +1,59 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    const selectedLanguageDiv = document.getElementById('selected-language');
+    const languageOptionsDiv = document.getElementById('language-options');
+    const languageOptions = document.querySelectorAll('.language-option');
+
     function setLanguage(language) {
         localStorage.setItem('language', language);
         applyTranslations();
-        updateActiveFlag(language);  // Met à jour le bouton actif
+        updateSelectedLanguage(language);
     }
 
-    // Fonction pour mettre à jour le bouton actif pour les drapeaux
-    function updateActiveFlag(language) {
-        const flags = document.querySelectorAll('.flag');
-        flags.forEach(flag => {
-            if (flag.id === `lang-${language}`) {
-                flag.classList.add('inactive');
-            } else {
-                flag.classList.remove('inactive');
-            }
+    function updateSelectedLanguage(language) {
+        const selected = document.getElementById('selected-language');
+        if (language === 'fr') {
+            selected.innerHTML = `
+                <img src="content/flagFR.png" alt="Français" />
+                <span>Français</span>
+            `;
+        } else {
+            selected.innerHTML = `
+                <img src="content/flagEN.png" alt="English" />
+                <span>English</span>
+            `;
+        }
+    }
+
+    // Clique pour ouvrir/fermer les options
+    selectedLanguageDiv.addEventListener('click', function() {
+        languageOptionsDiv.classList.toggle('hidden');
+    });
+
+    // Clique sur une langue
+    languageOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const selectedLang = option.getAttribute('data-lang');
+            setLanguage(selectedLang);
+            languageOptionsDiv.classList.add('hidden'); // refermer après choix
         });
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const currentLanguage = localStorage.getItem('language') || 'en';
-        updateActiveFlag(currentLanguage);
-        applyTranslations();
     });
 
-    document.getElementById('lang-en').addEventListener('click', function() {
-        setLanguage('en');
-    });
+    // Initialisation au chargement
+    const currentLanguage = localStorage.getItem('language') || 'en';
+    updateSelectedLanguage(currentLanguage);
+    applyTranslations();
 
-    document.getElementById('lang-fr').addEventListener('click', function() {
-        setLanguage('fr');
+    // Si tu veux fermer le menu si clic en dehors
+    document.addEventListener('click', function(e) {
+        if (!document.querySelector('.custom-language-switcher').contains(e.target)) {
+            languageOptionsDiv.classList.add('hidden');
+        }
     });
 
 });
 
+// Ta fonction existante
 function applyTranslations() {
     const currentLanguage = localStorage.getItem('language') || 'en';
 
@@ -105,6 +125,7 @@ const translations = {
         riot_description: "React & Node.JS",
         gamejam_title: "Cat coins du monde",
         gamejam_description: "Godot 3",
+        gamejam_access_link: "Cat coins du monde on Itch.io",
         motion_title: "Motion Design",
         motion_description: "After Effects",
         projetspe_project_title: "Specialization Project",
@@ -164,6 +185,7 @@ const translations = {
         riot_description: "React & Node.JS",
         gamejam_title: "Cat coins du monde",
         gamejam_description: "Godot 3",
+        gamejam_access_link: "Cat coins du monde sur Itch.io",
         motion_title: "Motion Design",
         motion_description: "After Effects",
         projetspe_project_title: "Projet de spécialité",

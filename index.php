@@ -15,9 +15,21 @@
         <source src="content/wb_background.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
     </video>
-    <div class="language-switcher">
-      <img id="lang-en" src="content/flagEN.png" alt="English" title="English" class="flag" />
-      <img id="lang-fr" src="content/flagFR.png" alt="Français" title="Français" class="flag" />
+    <div class="custom-language-switcher">
+      <div id="selected-language">
+        <img src="content/flagEN.png" alt="English" />
+        <span>English</span>
+      </div>
+      <div id="language-options" class="hidden">
+        <div class="language-option" data-lang="en">
+          <img src="content/flagEN.png" alt="English" />
+          <span>English</span>
+        </div>
+        <div class="language-option" data-lang="fr">
+          <img src="content/flagFR.png" alt="Français" />
+          <span>Français</span>
+        </div>
+      </div>
     </div>
     <div class="border-container">
         <div class="main-info">
